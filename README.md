@@ -15,7 +15,7 @@ git clone https://github.com/marshmellodie/IE8-skin-for-Firefox.git
 Go to about:support in Firefox to locate your profile folder.
 
 It should look something like this.
-![](docs\img\Screenshot_2025_14_09_2128.png)
+![](docs/img/Screenshot_2025_14_09_2128.PNG)
 Open it.
 
 ## Step 3
@@ -25,7 +25,7 @@ Copy the chrome folder from this repository and paste it into that profile direc
 Going back to Firefox, type about:config in the url bar. If you get a warning message, click on accept and continue.
 
 Next, type 'toolkit.legacyUserProfileCustomizations.stylesheets' and set it to True.
-![](docs\img\Screenshot_2025_14_09_2145.png)
+![](docs/img/Screenshot_2025_14_09_2145.png)
 
 After this, restart firefox.
 
@@ -38,9 +38,9 @@ This skin is still in development. When typing in the Url bar, it will severely 
 You CAN change the branding of the executable with Resource Hacker, but I don't really recommend it as there's a 50/50 chance that Windows Defender (or any other antivirus you have) may flag the modified firefox.exe as sus.
 
 Before
-![This is my friend's firefox](docs\img\image.png)
+![This is my friend's firefox](docs/img/image.png)
 
 After
-![This is my firefox](docs\img\Screenshot_2025_14_09_2153.png)
+![This is my firefox](docs/img/Screenshot_2025_14_09_2153.png)
 
 Have fun! If there are some bugs, lmk.
