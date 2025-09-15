@@ -66,6 +66,7 @@
 }
 
 #tabs-newtab-button {
+   list-style-image: none !important;
    color: transparent !important;
    box-shadow: inset 1px 1px #c3c8cf, inset -1px 0 #c3c8cf, inset 2px 2px #fff, inset -2px 0 #fff !important;
    border-radius: 3px 5px 0 0 !important;
@@ -73,6 +74,7 @@
 }
 
 #tabs-newtab-button:hover {
+   list-style-image: none !important;
    background-image: linear-gradient(#9fccdf, transparent) !important;
 }
 

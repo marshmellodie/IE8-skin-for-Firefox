@@ -1,5 +1,6 @@
 @import "urlBar.css";
 @import "tabs.css";
+@import "icons.css";
 
 #main-window {
    background-color: #b4cee8 !important;
@@ -28,148 +29,6 @@
   align-items: center !important;
 }
 
-#back-button,
-#forward-button {
-  padding: 0px !important;
-  -moz-padding-start: 0px !important;
-  -moz-padding-end: 0px !important;
-  width: 42px !important;
-  height: 42px !important;
-}
-
-#forward-button {
-  margin-left: -10px !important;
-}
-
-#back-button .toolbarbutton-icon {
-  list-style-image: url("images/back.png") !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#forward-button .toolbarbutton-icon {
-  list-style-image: url("images/back.png") !important;
-  transform: scaleX(-1) !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#reload-button .toolbarbutton-icon {
-  list-style-image: url("images/refresh.png") !important;
-  fill: #FFFFFF !important;
-  stroke: #FFFFFF !important;
-}
-
-#stop-button .toolbarbutton-icon {
-  list-style-image: url("images/stop.png") !important;
-  fill: #FF0000 !important; /* Example: make the stop icon red */
-  stroke: #FF0000 !important;
-}
-
-#back-button:hover,
-#forward-button:hover {
-  background-color: transparent !important;
-  background-image: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-#back-button:hover > .toolbarbutton-icon,
-#forward-button:hover > .toolbarbutton-icon,
-#history-panelmenu:hover > .toolbarbutton-icon{
-  background-color: transparent !important;
-  background-image: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Change the Firefox home button icon */
-#home-button .toolbarbutton-icon {
-  list-style-image: url("images/home.png") !important;
-  width: 24px !important;
-  height: 24px !important;
-}
-
-/* Change the Firefox application menu (hamburger) button icon */
-#PanelUI-menu-button .toolbarbutton-icon {
-  list-style-image: url("images/menu.png") !important;
-  width: 24px !important;
-  height: 24px !important;
-}
-
-#bookmarks-menu-button {
-  list-style-image: url("images/star.png") !important;
-  display: -moz-box !important;
-  -moz-box-pack: center !important;
-  -moz-box-align: center !important;
-}
-
-#history-panelmenu .toolbarbutton-icon {
-  list-style-image: url("images/down.png") !important;
-  width: 32px !important;
-  height: 32px !important;
-}
-
-#history-panelmenu {
-  margin-left: -15px !important;
-  margin-right: -15px !important;
-}
-
-#email-link-button .toolbarbutton-icon {
-  list-style-image: url("images/email.png") !important;
-  width: 24px !important;
-  height: 24px !important;
-}
-
-#print-button .toolbarbutton-icon {
-  list-style-image: url("images/print.png") !important;
-  width: 24px !important;
-  height: 24px !important;
-}
-
-/* Hide the default icons */
-#reload-button .toolbarbutton-icon,
-#stop-button .toolbarbutton-icon {
-  -moz-appearance: none !important;
-}
-
-#reload-button, #stop-button{
-  padding: -1px !important;
-  width: 40px !important;
-  height: 40px !important;
-}
-
-#star-button .toolbarbutton-icon {
-  list-style-image: url("images/star.png") !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#tabs-newtab-button .toolbarbutton-icon {
-  list-style-image: none !important;
-  fill: #FFFFFF !important;
-  transition: all 0.2s ease-in-out !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#tabs-newtab-button:hover .toolbarbutton-icon {
-  list-style-image: none !important;
-  fill: #0088CC !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-#tabs-newtab-button {
-  padding: 0px !important;
-  width: 28px !important;
-  height: 28px !important;
-}
-
-#tabs-newtab-button .toolbarbutton-icon {
-  width: 100% !important;
-  height: 100% !important;
-}
-
 /* Make the tabbar thinner */
 :root {
   --tab-min-height: 25px !important;
@@ -181,13 +40,9 @@
   max-height: 25px !important;
 }
 
-#tabbrowser-tabs {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 #TabsToolbar {
   min-height: 25px !important;
-  background-image: linear-gradient(to top, #ffffff, #cee4fc) !important;
+  background-image: linear-gradient(to top, #d4e2fc, #cee4fc) !important;
 }
 
 #PersonalToolbar {
