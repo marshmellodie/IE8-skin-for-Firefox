@@ -19,7 +19,7 @@ Next, go to about:support in Firefox to locate your profile folder.
 
 It should look something like this.
 
-![](docs\Screenshot_2025_14_09_2128.PNG)
+![](docs/Screenshot_2025_14_09_2128.PNG)
 
 Open it and then copy the chrome folder from this repository and paste it into that profile directory.
 
@@ -28,7 +28,7 @@ Going back to Firefox, type 'about:config' in the url bar. If you get a warning 
 
 Next, type 'toolkit.legacyUserProfileCustomizations.stylesheets' and set it to True.
 
-![Here's what it should look like.](docs\Screenshot_2025_14_09_2145.png)
+![Here's what it should look like.](docs/Screenshot_2025_14_09_2145.png)
 
 After this, restart firefox. The theme will apply.
 
@@ -40,9 +40,9 @@ This skin is still in development. When typing in the Url bar, it will severely 
 You CAN change the branding of the executable with Resource Hacker, but I don't really recommend it as there's a 50/50 chance that Windows Defender (or any other antivirus you have) may flag the modified firefox.exe as sus.
 
 Before
-![This is my friend's firefox](docs\image.png)
+![This is my friend's firefox](docs/image.png)
 
 After
-![This is my firefox](docs\Screenshot_2025_14_09_2153.png)
+![This is my firefox](docs/Screenshot_2025_14_09_2153.png)
 
 Have fun! If there are some bugs, lmk. This may be frequently updated, so be sure to update the look.
