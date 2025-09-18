@@ -53,3 +53,27 @@
   background-color: #b4cee8 !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+#reload-button {
+  -moz-box-ordinal-group: 1 !important; /* old flexbox ordering */
+  order: 1 !important;                  /* new ordering */
+}
+
+#stop-button {
+  -moz-box-ordinal-group: 2 !important;
+  order: 2 !important;
+}
+
+#urlbar #page-action-buttons {
+  display: flex !important;
+  align-items: center !important;
+}
+
+#reload-button,
+#stop-button {
+  -moz-appearance: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 2px !important;
+  margin-inline: 2px !important;
+}

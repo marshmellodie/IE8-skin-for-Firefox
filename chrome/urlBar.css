@@ -8,22 +8,73 @@
    max-height: 32px !important;
 }
 
-#urlbar > #urlbar-background {
-    animation-name: none !important;
-    border: none !important;
-    animation: none !important;
-    border-radius: 2px !important;
-    padding: 0px !important; 
-    background-position: right center !important; 
-    border: 1px solid #638c94 !important;
-    min-height: 25px !important;
-    background-image: linear-gradient(#d6e6f9, #ecf2f9, #fff) !important;
-    box-shadow: 1px 1px #fff inset !important;
-    height: 32px !important;
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root {
+  /* keep these transparent so our gradient shows through */
+  --toolbar-field-background-color: transparent !important;
+  --toolbar-field-focus-background-color: transparent !important;
+}
+
+#urlbar,
+#urlbar > #urlbar-background,
+#urlbar[breakout][breakout-extend] > #urlbar-background,
+#urlbar-background,
+.urlbar-textbox {
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(180deg, #d6e6f9 0%, #ecf2f9 50%, #ffffff 100%) !important;
+  background-repeat: no-repeat !important;
+  background-clip: padding-box !important;
+  border: 1px solid #638c94 !important;
+  border-radius: 6px !important;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.6) !important;
+  min-height: 32px !important;
+  opacity: 1 !important;
+  mask-image: none !important;
+}
+
+#urlbar > #urlbar-background::before,
+#urlbar > #urlbar-background::after,
+#urlbar-background::before,
+#urlbar-background::after {
+  background: none !important;
+  background-image: none !important;
+  content: none !important;
+}
+
+#urlbar[focused="true"] > #urlbar-background,
+#urlbar[focused="true"] #urlbar-background {
+  background-image: linear-gradient(180deg, #c4e1ff 0%, #e8f3ff 60%, #ffffff 100%) !important;
+  border-color: #4a90e2 !important;
+  box-shadow: 0 0 6px rgba(74,144,226,0.25) !important;
+}
+
+#urlbar-input,
+#urlbar .textbox-input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#browser .urlbar-container,
+#browser #urlbar-container {
+  background: transparent !important;
+}
+
+#urlbar,
+#urlbar-container,
+#urlbar-background,
+#identity-box,
+#tracking-protection-icon-container,
+#page-action-buttons,
+#urlbar-input {
+  border-radius: 0 !important;
+  clip-path: none !important;
+  mask-image: none !important;
 }
 
 #search-container {
-   margin-top: -3px !important;
+   margin-top: 0px !important;
 }
 
 #searchbar {
@@ -56,23 +107,27 @@
 #urlbar[breakout][breakout-extend][breakout-extend-animate] {
     position: relative !important;
     margin-top: 0px !important;
-    padding-left: 3px !important; }
+    padding-left: 3px !important; 
+}
 
 #main-window[uidensity="compact"] #urlbar,
 #main-window[uidensity="compact"] #urlbar[breakout][breakout-extend][breakout-extend-animate] {
     margin-top: 1px !important;
     min-height: 25px !important;
     max-height: 25px !important;
-    padding-left: 3px !important; }
+    padding-left: 3px !important; 
+}
 
 #urlbar[breakout-extend] {
     top:calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
     left:calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2) !important;
-    width:100% !important }
+    width:100% !important 
+}
 
 #urlbar[breakout-extend] #urlbar-input-container {
     height:calc(var(--tab-min-height) - 3px) !important;
-    padding:0px!important }
+    padding:0px!important 
+}
 
 #main-window:not([uidensity="compact"]) #urlbar #urlbar-input-container,
 #main-window:not([uidensity="compact"]) #urlbar[breakout-extend] #urlbar-input-container {
@@ -99,16 +154,10 @@
     border-top: none !important;
 }
 
-
 .urlbarView-row:hover {
     background-color: #7eb7f0 !important;
 }
 
-/*.urlbarView-body-outer {
-    filter: blur(2px) !important;
-}
-*/
-/* identity box */
 #identity-box {
   padding-inline-start: 4px !important;
 }
