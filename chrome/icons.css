@@ -17,11 +17,42 @@
   height: 100% !important;
 }
 
+#back-button:hover:not([disabled]) .toolbarbutton-icon {
+  list-style-image: url("images/back_hover.png") !important;
+}
+
+#back-button:active:not([disabled]) .toolbarbutton-icon {
+  list-style-image: url("images/back.png") !important;
+}
+
+#back-button[disabled] .toolbarbutton-icon {
+  filter: grayscale(100%) brightness(70%) !important;
+  opacity: 1 !important; /* STOP DISAPPEARING */
+  visibility: visible !important;
+}
+
 #forward-button .toolbarbutton-icon {
   list-style-image: url("images/back.png") !important;
   transform: scaleX(-1) !important;
   width: 100% !important;
   height: 100% !important;
+}
+
+#forward-button:hover:not([disabled]) .toolbarbutton-icon {
+  list-style-image: url("images/back_hover.png") !important;
+  transform: scaleX(-1) !important;
+}
+
+#forward-button:active:not([disabled]) .toolbarbutton-icon {
+  list-style-image: url("images/back.png") !important;
+  transform: scaleX(-1) !important;
+}
+
+#forward-button[disabled] .toolbarbutton-icon {
+  filter: grayscale(100%) brightness(70%) !important;
+  transform: scaleX(-1) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 #reload-button,

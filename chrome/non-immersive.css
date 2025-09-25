@@ -1,0 +1,94 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Non-immersive mode for Firefox, fuck you immersive mode */
+#appMenu-popup,
+#appMenu-multiView {
+  background: #ffffff !important;
+  border: 1px solid #9a9a9a !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#appMenu-popup .subviewbutton,
+#appMenu-popup toolbarbutton {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 4px 14px !important;
+  font-family: system-ui, "Segoe UI", sans-serif !important;
+  font-size: 13px !important;
+}
+
+
+#sidebar-box,
+#sidebar {
+  background: #ffffff !important;
+  border: 1px solid #9a9a9a !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#history-panel #historyTree,
+#bookmarksPanel #bookmarks-view {
+  background: #ffffff !important;
+  border: none !important;
+  color: #000000 !important;
+  font-family: system-ui, "Segoe UI", sans-serif !important;
+  font-size: 13px !important;
+}
+
+#history-panel treechildren::-moz-tree-row(selected),
+#history-panel treechildren::-moz-tree-row(hover),
+#bookmarksPanel treechildren::-moz-tree-row(selected),
+#bookmarksPanel treechildren::-moz-tree-row(hover) {
+  background: #0b5fff !important;
+  color: #ffffff !important;
+}
+
+panel,
+panelmultiview,
+.panel-arrowcontent {
+  background: #ffffff !important;
+  border: 1px solid #9a9a9a !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+menuseparator {
+  height: 1px !important;
+  background: #c0c0c0 !important;
+  margin: 4px 8px !important;
+}
+
+#contentAreaContextMenu menuitem,
+#contentAreaContextMenu menu {
+  border-radius: 0 !important;
+}
+
+#context-back,
+#context-forward,
+#context-reload,
+#context-bookmarkpage {
+  display: none !important;
+}
+
+#contentAreaContextMenu {
+  background: #ffffff !important;
+  border: 1px solid #9a9a9a !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+#contentAreaContextMenu menuitem {
+  padding: 4px 14px !important;
+  border-radius: 0 !important;
+}
+
+menuitem:hover,
+menu:hover,
+.subviewbutton:hover,
+toolbarbutton:hover,
+richlistitem:hover,
+treechildren::-moz-tree-row(hover) {
+  background: #0b5fff !important;
+  color: #ffffff !important;
+}
