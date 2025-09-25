@@ -57,24 +57,16 @@
   box-shadow: none !important;
 }
 
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-#downloads-button .toolbarbutton-badge-stack > .toolbarbutton-icon {
-  list-style-image: none !important;
-  background-image: url("images/download.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: 24px 24px !important;
-  width: 24px !important;
-  height: 24px !important;
-  fill: none !important;
-  stroke: none !important;
-  mask-image: none !important;
+#downloads-indicator-anchor {
+  list-style-image: url("images/download.png") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
-#downloads-button .toolbarbutton-icon svg,
-#downloads-button .toolbarbutton-icon image {
-  display: none !important;
+#unified-extensions-button .toolbarbutton-icon {
+  list-style-image: url("images/addons.png") !important;
+  width: 32px !important;
+  height: 32px !important;
 }
 
 #home-button .toolbarbutton-icon {
@@ -119,7 +111,34 @@
   height: 24px !important;
 }
 
+#alltabs-button {
+  list-style-image: url("images/all-tabs-preview.png") !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.tab-icon-image[src="chrome://branding/content/icon32.png"],
+.tab-icon-image:not([src], [pinned], [crashed], [sharing], [pictureinpicture])
+{
+  display: flex !important;
+  content: url('images/NOTHING.png') !important;
+}
+
+.tab-throbber[busy],
+.tab-throbber[progress]
+{
+  opacity: 1 !important;
+  background-image: url('images/loading.png') !important;
+  border: 0 !important;
+}
+
 /* Hide the default icons */
+.tab-icon-stack[busy] .tab-icon-image {
+  display: none !important;
+  border: 0 !important;
+  content: none !important;
+}
+
 #reload-button .toolbarbutton-icon,
 #stop-button .toolbarbutton-icon {
   -moz-appearance: none !important;

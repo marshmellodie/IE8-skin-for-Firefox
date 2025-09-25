@@ -74,7 +74,7 @@
 }
 
 #tabs-newtab-button:hover {
-   list-style-image: none !important;
+   list-style-image: url('images/newtab.png') !important;
    background-image: linear-gradient(#9fccdf, transparent) !important;
 }
 

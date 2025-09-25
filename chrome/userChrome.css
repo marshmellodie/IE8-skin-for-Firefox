@@ -1,6 +1,7 @@
 @import "urlBar.css";
 @import "tabs.css";
 @import "icons.css";
+/*@import "non-immersive.css"; still experimenting*/
 
 #main-window {
    background-color: #b4cee8 !important;
